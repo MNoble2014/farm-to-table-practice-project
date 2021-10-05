@@ -136,3 +136,150 @@ nav.main {
     height: 10vh;
     display: none;
 }
+.gal-img:hover .hide {
+    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.farm {
+    background-image: url('../images/barn.jpg');
+}
+.cook {
+    background-image: url('../images/cook.jpg');
+}
+.veg {
+    background-image: url('../images/produce.jpg');
+}
+.animal {
+    background-image: url('../images/sheep.jpg');
+}
+/*Contact Section Styles*/
+#contact {
+    display: flex;
+    flex-wrap: wrap;
+}
+#contact h2 {
+    width: 100%;
+}
+.left, .right {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4% 0;
+}
+.left div {
+    width: 50%;
+    line-height: 2;
+}
+.right img {
+    width: 50%;
+}
+.left h3 {
+    text-align: left;
+}
+/*Footer Section Styles*/
+footer {
+    background-color: #fcb130;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+}
+footer div {
+    width: 30%;
+}
+.social {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 5%;
+}
+.footernav {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.footernav a {
+    margin: 2% 0;
+}
+footer a {
+    color: #fff;
+    transition: 2s;
+}
+footer a:hover {
+    color: #4f4f4f;
+}
+.copyright {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+/*Media Queries*/
+/*
+when we are building desktop first and scaling down we use max-width
+when we are building mobile first and scaling up we use min-width
+*/
+@media(max-width: 500px) {
+    /*apply these styles to any screen that is 500 px or smaller*/
+    /*Header Section Styles*/
+    nav.main {
+        flex-direction: column;
+        justify-content: center;
+    }
+    .links {
+        width: 100%;
+    }
+    /*Top Section Styles*/
+    #top {
+        margin-top: 15%;
+    }
+    .titles {
+        color: #fff;
+    }
+    /*Farm Section Styles*/
+    .container {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .box {
+        width: 90%;
+        margin: 2% 0;
+        padding: 8%;
+    }
+    /*About Section Styles*/
+    .text {
+        width: 90%;
+    }
+    /*Gallery Section Styles*/
+    .gal-img {
+        width: 90%;
+    }
+    .hide {
+        display: block;
+        width: 40%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    /*Contact Section Styles*/
+    .left, .right {
+        width: 100%;
+    }
+    .left {
+        order: 1;
+    }
+    footer {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    footer div {
+        width: 90%;
+    }
+    .copyright {
+        justify-content: center;
+        align-items: center;
+    }
+}
+/*this closes the media query*/
